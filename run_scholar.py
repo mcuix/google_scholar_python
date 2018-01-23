@@ -39,8 +39,8 @@ while num_results - PAGE_RESULT >= 0:
     query.set_num_page_results(PAGE_RESULT)
     query.set_phrase(args.phrase)
     query.set_timeframe(args.after, None)
-    query.set_include_citations(args.citations)
-    query.set_include_patents(args.patents)
+    query.set_include_citations(not args.citations)
+    query.set_include_patents(not args.patents)
     query.set_start(start_idx)
 
 
