@@ -27,6 +27,7 @@ optional arguments:
                         Do not search, just use articles in given cluster ID
 ```
 
+The `-n` flag sets the number of results. Use numbers such as 10, 20, 30, ...
 
 ```bash
 $ ./run_scholar.py -p "ORNL DAAC" --after=2017 --no-citations --no-patents -n 40
