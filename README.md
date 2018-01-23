@@ -16,6 +16,7 @@ Wrapper for scholar.py
 optional arguments:
   -h, --help            show this help message and exit
   -p PHRASE, --phrase PHRASE
+  -a AUTHOR, --author AUTHOR
   --after AFTER
   --no-citations        Do not include citations in results
   --no-patents          Do not include patents in results
