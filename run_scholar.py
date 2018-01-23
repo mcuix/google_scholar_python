@@ -29,14 +29,14 @@ start_idx = 0
 num_results = args.num_results
 all_articles = []
 
-while num_results - PAGE_COUNT >= 0:
-    print('working on results', start_idx, 'through', start_idx + PAGE_COUNT + '...')
+while num_results - PAGE_RESULT >= 0:
+    print('working on results', start_idx, 'through', start_idx + PAGE_RESULT + '...')
     if args.cluster_id:
         query = scholar.ClusterScholarQuery(cluster=args.cluster_id)
     else:
         query = scholar.SearchScholarQuery()
 
-    query.set_num_page_results(PAGE_COUNT)
+    query.set_num_page_results(PAGE_RESULT)
     query.set_phrase(args.phrase)
     query.set_timeframe(args.after, None)
     query.set_include_citations(args.citations)
@@ -54,8 +54,8 @@ while num_results - PAGE_COUNT >= 0:
     for art in querier.articles:
         all_articles.append(art)
 
-    start_idx   += PAGE_COUNT
-    num_results -= PAGE_COUNT
+    start_idx   += PAGE_RESULT
+    num_results -= PAGE_RESULT
     ### For Robot Checking
     time.sleep(15)
 
