@@ -29,6 +29,9 @@ start_idx = 0
 num_results = args.num_results
 all_articles = []
 
+include_citations = "1" if args.citations else "0"
+include_patetns   = "1" if args.patents else "0"
+
 while num_results - PAGE_RESULT >= 0:
     print('working on results', start_idx, 'through', start_idx + PAGE_RESULT,  '...')
     if args.cluster_id:
