@@ -3,6 +3,7 @@
 
 # Python
 *__pyc*
+*.pyc*
 
 # Output files
 *.txt
