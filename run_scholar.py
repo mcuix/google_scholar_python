@@ -64,13 +64,14 @@ while num_results - PAGE_RESULT >= 0:
 if all_articles:
     header = args.header
     if args.save:
-        fname = 'response_' + datetime.datetime.now().strftime('%H:%M') + '.txt'
+        fname = 'response_' + datetime.datetime.now().strftime('%H%M') + '.txt'
         fin = open(fname, 'w')
         for art in all_articles:
             result = art.as_csv(header=header, sep='|')
             header = False
             fin.write(scholar.encode(result) + '\n')
         fin.close()
+        print("Results saved to", fname)
     else:
         for art in all_articles:
             result = art.as_csv(header=header, sep='|')
