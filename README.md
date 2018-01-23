@@ -5,6 +5,27 @@ the script to add paging in order to receive more than 20 results (code from htt
 ## Usage
 `run_scholar.py` is a wrapper for `scholar.py` that allows for paging. The following are examples of how to use `run_scholar.py`.
 
+```bash
+$ ./run_scholar.py -h
+usage: run_scholar.py [-h] [-p PHRASE] [--after AFTER] [--no-citations]
+                      [--no-patents] [-n NUM_RESULTS] [--csv-header] [-s]
+                      [-C CLUSTER_ID]
+
+Wrapper for scholar.py
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PHRASE, --phrase PHRASE
+  --after AFTER
+  --no-citations        Do not include citations in results
+  --no-patents          Do not include patents in results
+  -n NUM_RESULTS, --num-results NUM_RESULTS
+                        Number of Total Results (multiple of ten)
+  --csv-header          Include a header separated by |
+  -s, --save
+  -C CLUSTER_ID, --cluster-id CLUSTER_ID
+                        Do not search, just use articles in given cluster ID
+```
 scholar.py
 ==========
 

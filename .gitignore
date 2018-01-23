@@ -2,4 +2,4 @@
 *.DS*
 
 # Python
-*.__pyc*
+*__pyc*
