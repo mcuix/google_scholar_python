@@ -26,6 +26,24 @@ optional arguments:
   -C CLUSTER_ID, --cluster-id CLUSTER_ID
                         Do not search, just use articles in given cluster ID
 ```
+
+
+```bash
+$ ./run_scholar.py -p "ORNL DAAC" --after=2017 --no-citations --no-patents -n 20
+working on results 0 through 10 ...
+working on results 10 through 20 ...
+CMS: Estimated Deforested Area Biomass, Tropical America, Africa, and Asia, 2000. ORNL DAAC, Oak Ridge, Tennessee, USA|http://scholar.google.com/https://daac.ornl.gov/CMS/guides/CMS_Pantropical_Forest_Biomass.html|2018|0|2|None|None|None|http://scholar.google.com/scholar?cluster=13908692318721584524&hl=en&as_sdt=0,5&as_ylo=2017|None|Summary This data set provides estimates of pre-deforestation aboveground live woody biomass (AGLB) at 30-m resolution for deforested areas of tropical America, tropical Africa, and tropical Asia for the year 2000. The biomass estimates are only for areas where
+
+Daymet: Annual Tile Summary Cross-Validation Statistics for North America, Version 3. ORNL DAAC, Oak Ridge, Tennessee, USA|http://daac.ornl.gov/DAYMET/guides/Daymet_V3_CrossVal.html|2017|1|2|8753683732357520940|None|http://scholar.google.com/scholar?cites=8753683732357520940&as_sdt=2005&sciodt=0,5&hl=en|http://scholar.google.com/scholar?cluster=8753683732357520940&hl=en&as_sdt=0,5&as_ylo=2017|None|Summary This data set provides annual summary cross-validation statistics for minimum temperature (tmin), maximum temperature (tmax), and daily total precipitation (prcp) of" Daymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 3"(Thornton
+
+Daymet: Station-Level Inputs and Model Predicted Values for North America, Version 3. ORNL DAAC, Oak Ridge, Tennessee, USA|http://scholar.google.com/https://daac.ornl.gov/DAYMET/guides/Daymet_V3_Stn_Level_CrossVal.html|2017|0|2|None|None|None|http://scholar.google.com/scholar?cluster=7010885143084275418&hl=en&as_sdt=0,5&as_ylo=2017|None|Summary This data set reports the station-level daily weather observation data and the corresponding Daymet model predicted data for three Daymet model parameters: minimum temperature (tmin), maximum temperature (tmax), and daily total precipitation (prcp). Each
+
+LiDAR and DTM Data from Tapajos National Forest in Para, Brazil, 2008. ORNL DAAC, Oak Ridge, Tennessee, USA|http://scholar.google.com/https://daac.ornl.gov/VEGETATION/guides/Forested_Areas_Para_Brazil.html|2017|0|2|None|None|None|http://scholar.google.com/scholar?cluster=14833637907006139112&hl=en&as_sdt=0,5&as_ylo=2017|None|Summary This data set provides LiDAR point clouds and digital terrain models (DTM) from surveys over the Tapajos National Forest in Belterra municipality, Para, Brazil during late June and early July 2008. The surveys encompass the K67 and K83 eddy flux towers and a
+
+[...]
+```
+
+
 scholar.py
 ==========
 

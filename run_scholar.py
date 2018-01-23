@@ -1,4 +1,4 @@
-#! /Users/karthik/anaconda3/bin/python
+#! /usr/bin/env python
 import datetime
 import argparse
 import scholar
