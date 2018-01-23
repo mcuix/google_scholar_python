@@ -3,7 +3,6 @@ import datetime
 import argparse
 import scholar
 import time
-import sys
 
 PAGE_RESULT = 10
 
