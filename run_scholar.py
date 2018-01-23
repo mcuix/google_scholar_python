@@ -8,6 +8,7 @@ PAGE_RESULT = 10
 
 parser = argparse.ArgumentParser(description='Wrapper for scholar.py')
 parser.add_argument('-p', '--phrase', dest='phrase')
+parser.add_argument('-a', '--author', dest='author')
 parser.add_argument('--after', type=int, dest='after')
 parser.add_argument('--no-citations', action='store_true', default=False, dest='citations',
                  help='Do not include citations in results')
@@ -41,6 +42,7 @@ while num_results - PAGE_RESULT >= 0:
     query.set_timeframe(args.after, None)
     query.set_include_citations(not args.citations)
     query.set_include_patents(not args.patents)
+    query.set_author(args.author)
     query.set_start(start_idx)
 
 
