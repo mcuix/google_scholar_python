@@ -30,7 +30,7 @@ num_results = args.num_results
 all_articles = []
 
 while num_results - PAGE_RESULT >= 0:
-    print('working on results', start_idx, 'through', start_idx + PAGE_RESULT + '...')
+    print('working on results', start_idx, 'through', start_idx + PAGE_RESULT,  '...')
     if args.cluster_id:
         query = scholar.ClusterScholarQuery(cluster=args.cluster_id)
     else:
